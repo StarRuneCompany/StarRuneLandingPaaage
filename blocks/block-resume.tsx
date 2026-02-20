@@ -64,28 +64,19 @@ export default function BlockResume({ id, dataAppearThreshold }: IBlockResume) {
 			className="bg-white"
 		>
 			<div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
-				<div className="space-y-4 order-2 lg:order-1">
-					<h2 className="text-2xl font-bold text-slate-700">The World of {data.brand}</h2>
+				<div className="space-y-4 order-2 lg:order-3 text-2xl">
+					<h2 className="text-4xl font-bold text-slate-700">Learning Should Be Fun!</h2>
 
 					<p className="text-slate-500">
-						The Stars have always guarded Shape World from the Azki. They wielded Twelve Legendary swords, forged from Star Runes. The most powerful was called Kry XeRnOg. But in secret, someone cursed it with Dark Runes. The Curse destroyed the sword, wielder, and his home.
+						Hi, I'm Quinlan and I'm on a mission to make learning fun. In 2017, I became a father and a few years later I was inspired when I saw a kids math show (Numberblocks) teach my kids to do square roots before they were in kindergarten. Since then, I've found I have a knack for teaching things in fun ways.
 					</p>
 
 					<p className="text-slate-500">
-						Five Kings gathered near Kry XeRnOg. From its broken shards, they forged new blades.
+					Serious Games are games that are designed to teach, and I'm on a mission to see how far we can push this concept.
 					</p>
 
-
-					<pre className="text-slate-500 whitespace-pre">
-						{`BC NOFNe forged BAlGaInTl
-Al "SiPS" ClArK forged PAsSbBi
-GaGe AsSe forged OSSeTePo
-TeI Xecs forged SiGe
-P.b. BiPoAt forged BrIAtTs`}
-					</pre>
-
 					<p className="text-slate-500">
-						But The Curse lived on through these swords, and corruption spread across the Five Kingdoms. Hordes of Azki swarmed the world. And the Stars were never seen again.
+						Star Rune is a Serious Game that teaches typing, chemistry, and more! It's good for the whole family and is fun to play at all levels; even if you've never typed before in your life!
 					</p>
 
 					<div className="pt-4 flex flex-wrap gap-4">
@@ -105,7 +96,7 @@ P.b. BiPoAt forged BrIAtTs`}
 						/>*/}
 
 						<iframe
-							src="https://www.youtube.com/embed/Ws1KOQASvlI?si=GZn8g1V1ZlrhR7Qe"
+							src="https://www.youtube.com/embed/lygz9f8Lv2s?si=21fKgO1IaCfN0Mht"
 							title="YouTube video player"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"

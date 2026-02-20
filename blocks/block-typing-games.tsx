@@ -15,7 +15,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://store.steampowered.com/app/3737990/Isekat_Crushed_by_a_Computer_My_Beloved_Kitten_is_Transported_to_a_Fantasy_World_where_its_Typing_Skills_Save_the_Kingdom/",
       title: "Isekat",
       description:
-        "A typing game where you play as a <strong>cat</strong>, crushed by a computer and transported to a <strong>fantasy world</strong> of swords, magic, catgirls and furries! As the hero summoned from another world, venture forth with your trusty keyboard, defeat foes and <strong>save the cat kingdom</strong>!",
+        "A typing game where you play as a cat, crushed by a computer and transported to a fantasy world of swords, magic, catgirls and furries! As the hero summoned from another world, venture forth with your trusty keyboard, defeat foes and save the cat kingdom!",
       button: {
         type: "steam",
         title: "Try the free demo",
@@ -35,7 +35,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://store.steampowered.com/app/1546690/Keys_of_Fury_Typing_Action/",
       title: "Keys of Fury",
       description:
-        "Keys of Fury is a retro-style <strong>Beat `em up</strong> typing game. Focus on <strong>typing perfection</strong> as you battle your way to becoming a master of <strong>key fu</strong>.",
+        "Keys of Fury is a retro-style Beat `em up typing game. Focus on typing perfection as you battle your way to becoming a master of key fu.",
       button: {
         type: "steam",
         title: "Get the game on Steam",
@@ -55,7 +55,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://store.steampowered.com/app/3387970/Squash_and_Spell__Kids_Typing/",
       title: "Squash and Spell",
       description:
-        "A fun & friendly way for <strong>children</strong> to <strong>learn</strong> about letters, words, <strong>keyboards</strong> and writing!",
+        "A fun & friendly way for children to learn about letters, words, keyboards and writing!",
       button: {
         type: "steam",
         title: "Discover the game",
@@ -75,7 +75,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://store.steampowered.com/app/2400160/Glyphica_Typing_Survival/",
       title: "Glyphica: Typing Survival",
       description:
-        "<strong>Weaponize your WPM</strong>. Glyphica: Typing Survival is a single-player <strong>roguelite</strong> horde survival typing game that lets you mow down <strong>hordes of enemies</strong> in a minimalistic arena using your finger dexterity, your choice of weapons loadout, and sheer determination.",
+        "Weaponize your WPM. Glyphica: Typing Survival is a single-player roguelite horde survival typing game that lets you mow down hordes of enemies in a minimalistic arena using your finger dexterity, your choice of weapons loadout, and sheer determination.",
       button: {
         type: "steam",
         title: "Play the demo now",
@@ -95,7 +95,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://store.steampowered.com/app/3949700/Zombie_Typing/",
       title: "Zombie Typing",
       description:
-        "Zombie Typing is a tense survival game where <strong>every action</strong>: moving, looting, reloading, and fighting off the <strong>undead</strong>, relies on your typing skills. Type fast and stay sharp, because one wrong key could mean the difference between <strong>survival<strong> and being devoured!",
+        "Zombie Typing is a tense survival game where every action: moving, looting, reloading, and fighting off the undead, relies on your typing skills. Type fast and stay sharp, because one wrong key could mean the difference between survival and being devoured!",
       button: {
         type: "steam",
         title: "Play the survival demo",
@@ -114,7 +114,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://rhythm-typer.web.app/",
       title: "Rhythm Typer",
       description:
-        "<strong>Free</strong> browser typing <strong>rhythm</strong> game!",
+        "Free browser typing rhythm game!",
       button: {
         type: "web",
         title: "Play instantly online",
@@ -134,7 +134,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: "https://store.steampowered.com/app/3975280/TypeCaster/",
       title: "TypeCaster",
       description:
-        "ABRA KABRA DABRA! Type your way into the top, harness powerful <strong>spells</strong>, uncover <strong>treasures</strong>, and lift that stupid <strong>curse</strong> of yours!",
+        "ABRA KABRA DABRA! Type your way into the top, harness powerful spells, uncover treasures, and lift that stupid curse of yours!",
       button: {
         type: "steam",
         title: "Test the magic for free",
@@ -154,7 +154,7 @@ export default function BlockTypingGames({ id }: IBlockTypingGames) {
       url: data.url.demo,
       title: data.brand,
       description:
-        "Star Rune is the <strong>ultimate typing game</strong> and the funnest experience typing you've ever had! <strong>Slash and dash</strong> through hordes of cookies and evil letters. 力. 速. 志. Unleash the true power of a <strong>super star</strong>!",
+        "Star Rune is the ultimate typing game and the funnest experience typing you've ever had! Slash and dash through hordes of cookies and evil letters. 力. 速. 志. Unleash the true power of a super star!",
       button: {
         type: "demo",
         title: "Play instantly in your browser",
