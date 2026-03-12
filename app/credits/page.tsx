@@ -42,9 +42,6 @@ export default function Credits({ }: ICredits) {
 							<ExternalLink href="https://radix-ui.com">radix-ui.com</ExternalLink>
 						</li>
 						<li>
-							<ExternalLink href="https://lenis.darkroom.engineering/">lenis</ExternalLink>
-						</li>
-						<li>
 							<ExternalLink href="https://fkhadra.github.io/react-toastify/introduction/">react-toastify</ExternalLink>
 						</li>
 						<li>

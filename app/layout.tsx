@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { Geist, Tomorrow } from "next/font/google";
-import { ReactLenis } from "lenis/react";
 import data from "@/utils/data";
 import { ToastContainer } from "react-toastify";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -28,7 +27,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="scroll-smooth overscroll-none">
+    <html lang="en" className="overscroll-none">
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -50,7 +49,6 @@ export default function RootLayout({
       <body
         className={`${fontPrimary.variable} ${fontSecondary.variable} font-secondary antialiased selection:bg-yellow-500 selection:text-background`}
       >
-        <ReactLenis root />
         {children}
         <ToastContainer />
       </body>
