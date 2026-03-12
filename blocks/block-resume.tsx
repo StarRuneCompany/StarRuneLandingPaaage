@@ -22,7 +22,7 @@ export default function BlockResume({ id, dataAppearThreshold }: IBlockResume) {
 			iconColor: "text-emerald-400",
 			title: "Every stroke = Action",
 			text: "Feel the rush with every keystroke",
-			className: "shadow-emerald-400/30 hover:shadow-emerald-400/30 border-emerald-400",
+			className: "shadow-emerald-400/30 border-emerald-400",
 		},
 		{
 			icon: <Heart />,
@@ -30,7 +30,7 @@ export default function BlockResume({ id, dataAppearThreshold }: IBlockResume) {
 			iconColor: "text-red-400",
 			title: "Beginner friendly",
 			text: "Impossible to fail in early levels",
-			className: "shadow-red-400/30 hover:shadow-red-400/30 border-red-400",
+			className: "shadow-red-400/30 border-red-400",
 		},
 		{
 			icon: <Sword />,
@@ -38,7 +38,7 @@ export default function BlockResume({ id, dataAppearThreshold }: IBlockResume) {
 			iconColor: "text-sky-400",
 			title: "12 legendary swords",
 			text: "Each with unique abilities",
-			className: "shadow-sky-400/30 hover:shadow-sky-400/30 border-sky-400",
+			className: "shadow-sky-400/30 border-sky-400",
 		},
 		{
 			icon: <Trophy />,
@@ -46,7 +46,7 @@ export default function BlockResume({ id, dataAppearThreshold }: IBlockResume) {
 			iconColor: "text-purple-400",
 			title: "118 levels",
 			text: "Every level is unique",
-			className: "shadow-purple-400/30 hover:shadow-purple-400/30 border-purple-400",
+			className: "shadow-purple-400/30 border-purple-400",
 		},
 	];
 
@@ -85,7 +85,7 @@ export default function BlockResume({ id, dataAppearThreshold }: IBlockResume) {
 					</div>
 				</div>
 
-				<Card className="order-1 lg:order-2 overflow-hidden border-2 border-yellow-500/30 shadow-lg shadow-yellow-500/30 rounded-lg hover:shadow-xl hover:shadow-yellow-500/30 hover:rotate-cta duration-300 transition-all flex">
+				<Card className="order-1 lg:order-2 overflow-hidden border-2 border-yellow-500/30 shadow-lg shadow-yellow-500/30 rounded-lg flex select-none">
 					<CardContent className="flex p-0 aspect-video w-full">
 						{/*<Image
 							src="/star-rune-volcano.webp"

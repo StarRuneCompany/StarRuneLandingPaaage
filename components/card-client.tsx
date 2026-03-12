@@ -18,43 +18,43 @@ export default function CardClient({ src, names, about, text, source, className 
 		"irl": {
 			icon: <Message />,
 			iconHover: <MessageFill />,
-			border: "border-pink-500/50 hover:border-pink-500",
-			shadow: "hover:shadow-pink-500",
+			border: "border-pink-500/50",
+			shadow: "",
 			text: "text-pink-500",
 		},
 		"discord": {
 			icon: <Discord />,
 			iconHover: <DiscordFill />,
-			border: "border-discord-500/50 hover:border-discord-500",
-			shadow: "hover:shadow-discord-500",
+			border: "border-discord-500/50",
+			shadow: "",
 			text: "text-discord-500",
 		},
 		"kickstarter": {
 			icon: <Kickstarter />,
 			iconHover: <Kickstarter className="fill-kickstarter-500" />,
-			border: "border-kickstarter-500/50 hover:border-kickstarter-500",
-			shadow: "hover:shadow-kickstarter-500",
+			border: "border-kickstarter-500/50",
+			shadow: "",
 			text: "text-kickstarter-500",
 		},
 		"youtube": {
 			icon: <YouTube />,
 			iconHover: <YouTubeFill />,
-			border: "border-youtube-500/50 hover:border-youtube-500",
-			shadow: "hover:shadow-youtube-500",
+			border: "border-youtube-500/50",
+			shadow: "",
 			text: "text-youtube-500",
 		},
 		"x": {
 			icon: <X />,
 			iconHover: <X className="fill-x-500" />,
-			border: "border-x-500/50 hover:border-x-500",
-			shadow: "hover:shadow-x-500",
+			border: "border-x-500/50",
+			shadow: "",
 			text: "text-x-500",
 		},
 		"reddit": {
 			icon: <Reddit />,
 			iconHover: <Reddit />,
-			border: "border-reddit-500/50 hover:border-reddit-500",
-			shadow: "hover:shadow-reddit-500",
+			border: "border-reddit-500/50",
+			shadow: "",
 			text: "text-reddit-500",
 		}
 	};
@@ -102,18 +102,18 @@ export default function CardClient({ src, names, about, text, source, className 
 
 	return (
 		<Wrapper
-			className={`border-2 bg-white hover:rotate-cta rounded-lg p-6 transition-all duration-300 hover:shadow-sm flex flex-col w-card-client-mobile md:w-card-client gap-6 group group/hover justify-between ${types[source.type].border} ${types[source.type].shadow}${className ? ` ${className}` : ""}`}
+			className={`border-2 bg-white rounded-lg p-6 flex flex-col w-card-client-mobile md:w-card-client gap-6 group justify-between select-none ${types[source.type].border}${className ? ` ${className}` : ""}`}
 		>
 			<div className="flex flex-col gap-4">
 				<div className="flex gap-4 items-center">
-					<div className={`relative h-10 w-10 transition-all duration-300 group-hover/hover:scale-125 ${types[source.type].text}`}>
+					<div className={`relative h-10 w-10 ${types[source.type].text}`}>
 						<IconInvert
 							icon={types[source.type].icon}
 							iconHover={types[source.type].iconHover}
 						/>
 					</div>
 
-					<p className={`${types[source.type].text} font-semibold group-hover/hover:translate-x-2 transition-all duration-300`}>{handleDefaultTitle(source)}</p>
+					<p className={`${types[source.type].text} font-semibold`}>{handleDefaultTitle(source)}</p>
 				</div>
 
 				<p className="text-slate-900 text-balance">{text}</p>
@@ -131,7 +131,7 @@ export default function CardClient({ src, names, about, text, source, className 
 				<div>
 					<p className={`font-bold font-primary text-lg ${types[source.type].text}`}>{names}</p>
 
-					<p className="text-slate-500 group-hover/hover:text-slate-600 transition-all duration-300">{about}</p>
+					<p className="text-slate-500">{about}</p>
 				</div>
 			</div>
 		</Wrapper>

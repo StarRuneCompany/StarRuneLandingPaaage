@@ -5,11 +5,11 @@ import IconInvert from "@/components/icon-invert";
 export default function CardSellingPoint({ icon, iconHover, iconColor, title, text, className, isSlide, style }: ICardSellingPoint) {
 	return (
 		<Card
-			className={`group/hover flex items-center bg-slate-600 duration-300 transition-all ${isSlide ? "hover:bg-slate-700 border-t-2 rounded-none h-full justify-center" : "hover:rotate-cta hover:bg-slate-700 shadow-lg hover:shadow-xl border-2"}${className ? ` ${className}` : ""}`}
+			className={`flex items-center bg-slate-600 ${isSlide ? "group/hover hover:bg-slate-700 border-t-2 rounded-none h-full justify-center duration-300 transition-all" : "shadow-lg border-2 select-none"}${className ? ` ${className}` : ""}`}
 			style={style}
 		>
 			<CardContent className={`p-4 flex items-center${isSlide ? " lg:py-6 lg:px-16 lg:gap-2" : ""}`}>
-				<div className={`relative min-h-8 h-8 min-w-8 w-8 mr-3 group-hover/hover:scale-110 transition-transform duration-300 ${iconColor}${isSlide ? " lg:h-12 lg:w-12" : ""}`}>
+				<div className={`relative min-h-8 h-8 min-w-8 w-8 mr-3 ${isSlide ? "group-hover/hover:scale-110 transition-transform duration-300" : ""} ${iconColor}${isSlide ? " lg:h-12 lg:w-12" : ""}`}>
 					<IconInvert
 						icon={icon}
 						iconHover={iconHover}
