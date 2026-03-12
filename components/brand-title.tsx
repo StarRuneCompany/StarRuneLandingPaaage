@@ -20,7 +20,6 @@ export default function BrandTitle({ size = "default", handleCloseMobileMenu }: 
 		window.scrollTo({
 			top: 0,
 			left: 0,
-			behavior: "smooth",
 		});
 
 		history.replaceState(null, "", "/");
