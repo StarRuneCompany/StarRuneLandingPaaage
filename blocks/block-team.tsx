@@ -20,7 +20,7 @@ export default function BlockTeam({ id }: IBlockTeam) {
 				<Image
 					src="/star-rune-poster.webp"
 					alt={`${data.brand} poster`}
-					className="w-full object-cover max-w-[500px] lg:max-w-[400px] xl:max-w-[500px] mx-auto border-2 border-yellow-500/30 shadow-lg shadow-yellow-500/30 rounded-lg hover:shadow-xl transition-all duration-300 hover:shadow-yellow-500/30 hover:rotate-cta"
+					className="w-full object-cover max-w-[500px] lg:max-w-[400px] xl:max-w-[500px] mx-auto border-2 border-yellow-500/30 shadow-lg shadow-yellow-500/30 rounded-lg select-none"
 				/>
 
 				<div className="space-y-6 text-lg text-slate-900 max-w-[800px] mx-auto text-balance flex flex-col justify-center">
