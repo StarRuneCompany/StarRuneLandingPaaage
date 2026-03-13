@@ -23,7 +23,7 @@ export default function BlockCommunity({ id }: IBlockCommunity) {
 			buttonTitle: "Join our server",
 			color: "text-discord-500",
 			className: "shadow-discord-500/20 hover:shadow-discord-500/20 border-discord-500/50 hover:border-discord-500",
-			buttonClassName: "border-discord-500/50 hover:bg-discord-500/5 hover:border-discord-500 hover:shadow-discord-500",
+			buttonClassName: "border-discord-500/50 group-hover/hover:bg-discord-500/5 group-hover/hover:border-discord-500 group-hover/hover:shadow-discord-500",
 		},
 		{
 			icon: <YouTube />,
@@ -34,7 +34,7 @@ export default function BlockCommunity({ id }: IBlockCommunity) {
 			buttonTitle: "Watch the channel",
 			color: "text-youtube-500",
 			className: "shadow-youtube-500/20 hover:shadow-youtube-500/20 border-youtube-500/50 hover:border-youtube-500",
-			buttonClassName: "border-youtube-500/50 hover:bg-youtube-500/5 hover:border-youtube-500 hover:shadow-youtube-500",
+			buttonClassName: "border-youtube-500/50 group-hover/hover:bg-youtube-500/5 group-hover/hover:border-youtube-500 group-hover/hover:shadow-youtube-500",
 		},
 		{
 			icon: <Kickstarter />,
@@ -45,7 +45,7 @@ export default function BlockCommunity({ id }: IBlockCommunity) {
 			buttonTitle: "Support the project",
 			color: "text-kickstarter-500",
 			className: "shadow-kickstarter-500/20 hover:shadow-kickstarter-500/20 border-kickstarter-500/50 hover:border-kickstarter-500",
-			buttonClassName: "border-kickstarter-500/50 hover:bg-kickstarter-500/5 hover:border-kickstarter-500 hover:shadow-kickstarter-500",
+			buttonClassName: "border-kickstarter-500/50 group-hover/hover:bg-kickstarter-500/5 group-hover/hover:border-kickstarter-500 group-hover/hover:shadow-kickstarter-500",
 		},
 		{
 			icon: <X />,
@@ -56,7 +56,7 @@ export default function BlockCommunity({ id }: IBlockCommunity) {
 			buttonTitle: "Explore my thoughts",
 			color: "text-x-500",
 			className: "shadow-x-500/20 hover:shadow-x-500/20 border-x-500/50 hover:border-x-500",
-			buttonClassName: "border-x-500/50 hover:bg-x-500/5 hover:border-x-500 hover:shadow-x-500",
+			buttonClassName: "border-x-500/50 group-hover/hover:bg-x-500/5 group-hover/hover:border-x-500 group-hover/hover:shadow-x-500",
 		},
 	];
 

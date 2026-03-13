@@ -3,7 +3,7 @@ import ExternalLink from "@/components/external-link";
 import Ping from "@/components/ping";
 import Loader from "@/icons/loader";
 
-export default function ButtonIcon({ url, icon, title, className, size = "default", titleClassName, ping, type, loading }: IButtonIcon) {
+export default function ButtonIcon({ url, icon, title, className, size = "default", titleClassName, ping, type, loading, renderAs }: IButtonIcon) {
 
 	const sharedClassName = `relative group/hover text-slate-950 group-[.dark]:text-black transition-all duration-300 flex items-center justify-center whitespace-nowrap rounded-lg hover:rotate-cta will-change-transform duration-300 shadow-lg hover:shadow-xl ${size === "default" ? "h-10 text-sm pl-[3rem] pr-4" : size === "big" ? "h-12 text-base pl-[3.75rem] pr-5" : "h-14 text-lg pl-[5rem] pr-6"}${className ? ` ${className}` : ""}`;
 
@@ -43,6 +43,14 @@ export default function ButtonIcon({ url, icon, title, className, size = "defaul
 			>
 				{childrenContent}
 			</button>
+		)
+	}
+
+	if (renderAs === "div") {
+		return (
+			<div className={sharedClassName}>
+				{childrenContent}
+			</div>
 		)
 	}
 

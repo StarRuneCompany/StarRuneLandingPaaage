@@ -1,6 +1,7 @@
 import { ITypingGame, TCSSVars } from "@/utils/types";
 import Image from "@/components/image";
 import ButtonIcon from "@/components/button-icon";
+import ExternalLink from "@/components/external-link";
 import Steam from "@/icons/steam";
 import World from "@/icons/world";
 
@@ -19,43 +20,45 @@ export default function TypingGame({
   strongColor,
 }: ITypingGame) {
   return (
-    <article
-      className={`typing-game border-2 bg-white rounded-lg transition-all duration-300 group/typing-game overflow-hidden hover:shadow-sm flex flex-col ${cardColors}`}
-    >
-      <Image
-        src={`/typing-games/${posterSrc}`}
-        alt={posterAlt}
-        className="object-cover h-auto w-full group-hover/typing-game:scale-[105%] transition-all duration-300"
-        width={460}
-        height={215}
-      />
+    <ExternalLink href={url} className="group/hover select-none block">
+      <article
+        className={`typing-game border-2 bg-white rounded-lg transition-all duration-300 group/typing-game overflow-hidden hover:shadow-sm flex flex-col h-full ${cardColors}`}
+      >
+        <Image
+          src={`/typing-games/${posterSrc}`}
+          alt={posterAlt}
+          className="object-cover h-auto w-full group-hover/typing-game:scale-[105%] transition-all duration-300"
+          width={460}
+          height={215}
+        />
 
-      <div className="text-slate-600 p-5 flex flex-col justify-between h-full gap-5">
-        <div>
-          <h3
-            className={`text-slate-600 uppercase font-bold mb-2 text-2xl transition-all duration-300 ${titleColors}`}
-          >
-            {title}
-          </h3>
-          <p
-            className="typing-game-description"
-            dangerouslySetInnerHTML={{ __html: description }}
-            style={
-              {
-                "--strong-color": `${strongColor}`,
-              } as TCSSVars
-            }
+        <div className="text-slate-600 p-5 flex flex-col justify-between h-full gap-5">
+          <div>
+            <h3
+              className={`text-slate-600 uppercase font-bold mb-2 text-2xl transition-all duration-300 ${titleColors}`}
+            >
+              {title}
+            </h3>
+            <p
+              className="typing-game-description"
+              dangerouslySetInnerHTML={{ __html: description }}
+              style={
+                {
+                  "--strong-color": `${strongColor}`,
+                } as TCSSVars
+              }
+            />
+          </div>
+
+          <ButtonIcon
+            icon={buttonType === "steam" ? <Steam /> : <World />}
+            title={buttonTitle}
+            className={`${buttonColors} group-hover/hover:rotate-cta group-hover/hover:shadow-xl`}
+            size="big"
+            renderAs="div"
           />
         </div>
-
-        <ButtonIcon
-          url={url}
-          icon={buttonType === "steam" ? <Steam /> : <World />}
-          title={buttonTitle}
-          className={buttonColors}
-          size="big"
-        />
-      </div>
-    </article>
+      </article>
+    </ExternalLink>
   );
 }
