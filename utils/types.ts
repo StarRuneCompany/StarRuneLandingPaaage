@@ -101,6 +101,7 @@ export interface IButtonIcon {
   ping?: IPing;
   type?: "submit";
   loading?: boolean;
+  renderAs?: "div";
 }
 
 export interface IButtonIconDemo {
