@@ -2,7 +2,7 @@ import type { ISectionWrapper } from "@/utils/types";
 import SectionHeader from "@/components/section-header";
 import Hr from "@/components/hr";
 
-export default function SectionWrapper({ id, children, className, badge, title, text, h1, removeWrapper }: ISectionWrapper) {
+export default function SectionWrapper({ id, children, className, title, text, h1, removeWrapper }: ISectionWrapper) {
 	return (
 		<section
 			id={id}
@@ -12,7 +12,6 @@ export default function SectionWrapper({ id, children, className, badge, title, 
 			<div className="container px-4 relative">
 				<SectionHeader
 					id={id}
-					badge={badge}
 					title={title}
 					text={text}
 					h1={h1}
